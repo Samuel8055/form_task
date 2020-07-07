@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form
+        class="form-container"
+        onsubmit="event.preventDefault(); formSubmission();"
+      >
+        <h1 class="title">Shipping address</h1>
+        <div class="form-group split-columns">
+          <div class="col1">
+            <input
+              type="text"
+              placeholder="First name (optional)"
+              class="form-control firstName"
+            />
+          </div>
+
+          <div class="col2">
+            <input
+              type="text"
+              placeholder="Last name"
+              class="form-control lastName"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="PIN code"
+            class="form-control pin_code"
+            onchange="changeHandler()"
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="Address"
+            class="form-control address"
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="Apartment, suite, etc. (optional)"
+            class="form-control apartment"
+          />
+        </div>
+
+        <div class="form-group">
+          <input type="text" placeholder="City" class="form-control city" />
+        </div>
+
+        <div class="form-group split-columns">
+          <div class="col1">
+            <input
+              type="text"
+              placeholder="Country/Region"
+              class="form-control country"
+            />
+          </div>
+
+          <div class="col2">
+            <input type="text" placeholder="State" class="form-control state" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input type="text" placeholder="Phone" class="form-control phone" />
+        </div>
+
+        <button type="submit" style="display: none;">Submit</button>
+      </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
